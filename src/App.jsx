@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./conponents/Home";
 import SharedLayout from "./conponents/SharedLayout";
 import Product from "./conponents/Product";
+import SingleProduct from "./conponents/SingleProduct";
 import Error from "./conponents/Error";
 import About from "./conponents/About";
 export default function App() {
@@ -13,6 +14,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="product" element={<Product />} />
+          <Route path="/product/:id" element={<SingleProduct />} />
+
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
