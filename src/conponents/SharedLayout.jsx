@@ -4,9 +4,10 @@ const SharedLayout = () => {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="section">
         <Outlet />
       </div>
+      <Navbar />
     </>
   );
 };

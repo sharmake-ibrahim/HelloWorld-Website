@@ -21,4 +21,10 @@
 }
 
 
+.section {
+  min-height: 70vh;
+  text-align: center;
+  max-width: 100vw;
+  
+}
 
